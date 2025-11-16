@@ -1,4 +1,4 @@
-# Publication-Quality Crack Detection Pipeline
+# Crack Pre-Detection Pipeline
 
 A comprehensive PyTorch-based 3D crack detection pipeline for computed tomography (CT) and volumetric imaging applications. This notebook implements a sophisticated 7-stage detection algorithm with multi-scale Hessian analysis, geometric feature extraction, and adaptive statistical hypothesis testing.
 
