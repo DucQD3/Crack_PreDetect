@@ -138,9 +138,7 @@ Modified p-values: $p^* = p / w$ where $w = π̂/(1-π̂)$
 ### Performance Characteristics
 
 Typical runtime (600×600×600 image):
-- GPU (NVIDIA RTX3090): ~5-10 minutes
-- GPU (NVIDIA A100): ~2-3 minutes
-- CPU (Intel i7): ~30-60 minutes
+- GPU (NVIDIA RTX3090): ~1-2 minutes
 
 Memory usage:
 - Input image: ~1.4 GB (for 600³ float32)
