@@ -81,9 +81,7 @@ $$\text{CUSUM} = \text{mean}(w) - \text{mean}(complement)$$
 Standardized across features for consistent statistics.
 
 #### Stage 5: Adaptive FDR Control
-Local sparsity estimate:
-$$\hat{π}(τ) = 1 - \frac{\text{count}(p > τ)}{(1-τ) \cdot n}$$
-
+Local sparsity estimate.
 Modified p-values: $p^* = p / w$ where $w = π̂/(1-π̂)$
 
 
