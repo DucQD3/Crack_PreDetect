@@ -94,7 +94,7 @@ Computed metrics (all against downscaled ground truth):
 Key papers and methods used:
 - Hessian-based ridge detection
 - CUSUM change-point analysis
-- Local FDR control (Benjamini-Hochberg)
+- Local FDR control (LAWS procedure)
 - Projection-based anisotropy measures
 
 ## Contact
