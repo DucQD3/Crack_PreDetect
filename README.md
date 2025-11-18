@@ -96,15 +96,6 @@ Computed metrics (all against downscaled ground truth):
 - **Recall**: $TP / (TP + FN)$ - False negative control
 
 
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit changes (`git commit -am 'Add feature'`)
-4. Push to branch (`git push origin feature/your-feature`)
-5. Submit pull request
-
 ## References
 
 Key papers and methods used:
