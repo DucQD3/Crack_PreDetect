@@ -14,7 +14,7 @@ A comprehensive PyTorch-based 3D crack detection pipeline for computed tomograph
 3. **Projection Anisotropy Analysis** - Distinguish cracks (1D, high STD) from blobs (3D, low STD)
 4. **CUSUM Statistical Analysis** - Local change-point detection via 3×3×3 sliding window analysis
 5. **P-Value Computation** - Empirical p-values from null distribution (rank-based method)
-6. **Adaptive P-Value Modification** - Local FDR control using Benjamini-Hochberg procedure
+6. **Adaptive P-Value Modification** - Local FDR control using LAWS procedure
 7. **Reconstruction & Upsampling** - Restore original resolution via transposed convolution voting (×20 upsampling)
 
 ### Key Capabilities
