@@ -27,22 +27,17 @@ A comprehensive PyTorch-based 3D crack detection pipeline for computed tomograph
 ### Input Format
 
 **Image File** (`input_path`):
-- Format: TIFF (32-bit float preferred) or any tifffile-compatible format
+- Format: TIFF
 - Dimensions: Any 3D array (D, H, W)
-- Intensity: Preferably normalized to [0, 1] or similar range
-- Example: 600×600×600 CT scan
 
 **Ground Truth** (`gt_path`):
 - Format: TIFF (8-bit uint8)
 - Dimensions: Same as input image
 - Values: Binary (0 or 1, where 1 = crack/defect)
-- Optional: If not needed for training, can use dummy file
 
 **Null Distribution** (`null_path`):
-- Format: NumPy .npy file
-- Shape: Any 3D array (typically feature-grid resolution)
+- File: background-blank_cusum_norm_nc.npy
 - Content: CUSUM statistics from background/non-defect regions
-- Optional: Pipeline uses synthetic p-values if file not found
 
 ### Customization
 
