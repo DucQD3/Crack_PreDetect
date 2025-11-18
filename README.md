@@ -109,7 +109,7 @@ window_size = 3  # Local analysis window (3-5 typical)
 
 # Adaptive thresholding
 tau = 0.1  # Sparsity parameter (0.05-0.5)
-alpha = 0.2  # Detection threshold (0.1-0.5, lower = more detections)
+alpha = 0.2  # Detection threshold (0.1-0.5, higher = more detections)
 ```
 
 ## Algorithm Details
@@ -149,7 +149,6 @@ Memory usage:
 
 Computed metrics (all against downscaled ground truth):
 
-- **Dice Coefficient**: $2|A ∩ B| / (|A| + |B|)$ - Overlap measure
 - **Jaccard Index (IoU)**: $|A ∩ B| / |A ∪ B|$ - Intersection over union
 - **Precision**: $TP / (TP + FP)$ - False positive control
 - **Recall**: $TP / (TP + FN)$ - False negative control
