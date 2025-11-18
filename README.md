@@ -18,11 +18,11 @@ A comprehensive PyTorch-based 3D crack detection pipeline for computed tomograph
 7. **Reconstruction & Upsampling** - Restore original resolution via transposed convolution voting (×20 upsampling)
 
 ### Key Capabilities
-- ✓ **GPU Acceleration** - CUDA support with automatic fallback to CPU
-- ✓ **Memory Efficient** - Chunked processing for large 3D volumes
-- ✓ **Comprehensive Visualizations** - 4 publication-quality plots per image
-- ✓ **Production Ready** - Error handling, progress tracking, metric computation
-- ✓ **Batch Processing** - Process multiple images with automatic results aggregation
+- **GPU Acceleration** - CUDA support with automatic fallback to CPU
+- **Memory Efficient** - Chunked processing for large 3D volumes
+- **Comprehensive Visualizations** - 4 publication-quality plots per image
+- **Production Ready** - Error handling, progress tracking, metric computation
+- **Batch Processing** - Process multiple images with automatic results aggregation
 
 ## Installation
 
