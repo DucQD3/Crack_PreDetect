@@ -58,27 +58,6 @@ tau = 0.1  # Sparsity parameter (0.05-0.5)
 alpha = 0.2  # Detection threshold (0.1-0.5, higher = more detections)
 ```
 
-## Algorithm Details
-
-### Mathematical Foundation
-
-#### Stage 1: Hessian Detection
-For each scale σ, compute Hessian matrix:
-$$H(x,σ) = \begin{bmatrix} \frac{∂^2I}{∂x^2} & \frac{∂^2I}{∂x∂y} & \frac{∂^2I}{∂x∂z} \\ \vdots & \vdots & \vdots \\ \frac{∂^2I}{∂z^2} \end{bmatrix}$$
-
-Ridge detection: Use max(|H_ij|) to capture high curvature
-Thresholding: Binary = 1 if response ≥ μ + 3σ
-
-#### Stage 4: CUSUM Analysis
-For local window w at position (i,j,k):
-$$\text{CUSUM} = \text{mean}(w) - \text{mean}(complement)$$
-
-Standardized across features for consistent statistics.
-
-#### Stage 5: Adaptive FDR Control
-Local sparsity estimate.
-Modified p-values: $p^* = p / w$ where $w = π̂/(1-π̂)$
-
 
 ### Evaluation Metrics
 
